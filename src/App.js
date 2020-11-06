@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Homepage from './components/Homepage/Homepage';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import UserDashboard from './components/UserDashboard/UserDashboard';
 
 const theme = createMuiTheme({
   palette: {
@@ -23,7 +24,7 @@ const theme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-        <Homepage />
+        <UserDashboard />
     </ThemeProvider>
   );
 }
